@@ -1,74 +1,142 @@
-const Contato = () => {
+import { useState } from "react";
+
+function Contato() {
+  const [nome, setNome] = useState("");
+  const [telefone, setTelefone] = useState("");
+  const [email, setEmail] = useState("");
+  const [assunto, setAssunto] = useState("");
+  const [mensagem, setMensagem] = useState("");
+
+  const enviar = (e) => {
+    e.preventDefault();
+    alert("Mensagem enviada com sucesso!");
+
+    setNome("");
+    setTelefone("");
+    setEmail("");
+    setAssunto("");
+    setMensagem("");
+  };
+
   return (
     <>
-      <section className="banner">
+      {/* BANNER */}
+      <section className="w-full h-70 md:h-105 overflow-hidden">
         <img
           src="/img/foto_contato (1).png"
-          alt="Imagem ilustrativa da página de contato"
+          alt="Contato"
+          className="w-full h-full object-cover"
         />
       </section>
 
+      {/* FORMULÁRIO */}
       <main>
-        <section className="formulario-contato">
-          <h1 className="titulo-contato">Fale Conosco</h1>
-          <h2>Envie sua mensagem</h2>
+        <section className="max-w-225 mx-auto mt-20 mb-16 bg-white px-12 py-14 rounded-[18px] shadow-md text-center">
+          <h1 className="text-[#4e7c11] text-[32px] font-bold mb-2">
+            Fale Conosco
+          </h1>
+
+          <h2 className="text-[#94c120] text-[20px] mb-8">
+            Envie sua mensagem
+          </h2>
 
           <form
-            action="mailto:contato@meuprojeto.com"
-            method="POST"
-            encType="text/plain"
+            onSubmit={enviar}
+            className="flex flex-col gap-4 text-left"
           >
-            <label htmlFor="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" required />
+            <label>Nome:</label>
+            <input
+              type="text"
+              value={nome}
+              onChange={(e) => setNome(e.target.value)}
+              placeholder="Digite seu nome completo"
+              className="border-2 border-[#e7e7e5] rounded-[10px] px-4 py-3 outline-none focus:border-[#f78b1f] focus:shadow-[0_0_8px_rgba(247,139,31,0.4)]"
+              required
+            />
 
-            <label htmlFor="telefone">Telefone:</label>
-            <input type="tel" id="telefone" name="telefone" required />
+            <label>Telefone:</label>
+            <input
+              type="tel"
+              value={telefone}
+              onChange={(e) => setTelefone(e.target.value)}
+              placeholder="(11) 99999-9999"
+              className="border-2 border-[#e7e7e5] rounded-[10px] px-4 py-3 outline-none focus:border-[#f78b1f] focus:shadow-[0_0_8px_rgba(247,139,31,0.4)]"
+              required
+            />
 
-            <label htmlFor="email">Email:</label>
-            <input type="email" id="email" name="email" required />
+            <label>Email:</label>
+            <input
+              type="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              placeholder="seuemail@exemplo.com"
+              className="border-2 border-[#e7e7e5] rounded-[10px] px-4 py-3 outline-none focus:border-[#f78b1f] focus:shadow-[0_0_8px_rgba(247,139,31,0.4)]"
+              required
+            />
 
-            <label htmlFor="assunto">Assunto:</label>
-            <input type="text" id="assunto" name="assunto" required />
+            <label>Assunto:</label>
+            <input
+              type="text"
+              value={assunto}
+              onChange={(e) => setAssunto(e.target.value)}
+              placeholder="Ex: Duvida sobre cadastro"
+              className="border-2 border-[#e7e7e5] rounded-[10px] px-4 py-3 outline-none focus:border-[#f78b1f] focus:shadow-[0_0_8px_rgba(247,139,31,0.4)]"
+              required
+            />
 
-            <label htmlFor="mensagem">Mensagem:</label>
-            <textarea id="mensagem" name="mensagem" rows={6} required />
+            <label>Mensagem:</label>
+            <textarea
+              rows={6}
+              value={mensagem}
+              onChange={(e) => setMensagem(e.target.value)}
+              placeholder="Escreva sua mensagem aqui ..."
+              className="border-2 border-[#e7e7e5] rounded-[10px] px-4 py-3 outline-none focus:border-[#f78b1f] focus:shadow-[0_0_8px_rgba(247,139,31,0.4)]"
+              required
+            />
 
-            <button type="submit">Enviar</button>
+            <button
+              type="submit"
+              className="bg-[#f78b1f] text-white px-8 py-3 rounded-[10px] font-bold cursor-pointer"
+            >
+              Enviar
+            </button>
           </form>
         </section>
 
-        <section className="localizacao">
-          <div className="localizacao-conteudo">
-            <div className="mapa">
+        {/* LOCALIZAÇÃO */}
+        <section className="w-full bg-[#d6e76b6b] px-[5%] py-20 flex justify-center">
+          <div className="flex flex-wrap justify-center gap-12 max-w-300 w-full">
+            
+            <div className="w-full max-w-150">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.682438828481!2d-46.63731352477059!3d-23.578938478783777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c35d7aa63d%3A0x41c9e0e14db5b4f8!2sR.%20Maur%C3%ADcio%20Francisco%20Klabin%2C%20449%20-%20Vila%20Mariana%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2004120-020!5e0!3m2!1spt-BR!2sbr!4v1697733123456"
-                width="500"
-                height="350"
+                src="https://www.google.com/maps/embed?pb=..."
+                className="w-full h-95 rounded-2xl border-4 border-white shadow-lg"
                 style={{ border: 0 }}
-                allowFullScreen
                 loading="lazy"
+                title="Mapa"
               ></iframe>
             </div>
 
-            <div className="endereco">
-              <h2>Endereço Turma do Bem</h2>
+            <div className="bg-[#babf349c] text-white px-8 py-10 rounded-[18px] max-w-100">
+              <h2 className="text-xl font-bold mb-4">
+                Endereço Turma do Bem
+              </h2>
+
               <p>
-                Rua Maurício Francisco Klabin, 449
-                <br />
-                Vila Mariana, São Paulo - SP
-                <br />
+                Rua Maurício Francisco Klabin, 449<br />
+                Vila Mariana, São Paulo - SP<br />
                 CEP 04120-020
               </p>
 
-              <p>
+              <p className="mt-4">
                 <strong>Telefone:</strong> (11) 5084-7276
               </p>
             </div>
+
           </div>
         </section>
       </main>
     </>
   );
-};
-
+}
 export default Contato;

@@ -5,12 +5,13 @@ const Integrantes = () => {
         <img
           src="/img/header-integrantes.png"
           alt="img com a logo da Vision - Integrantes"
+          className="w-full h-full object-cover"
         />
       </section>
 
       <main>
-        <section className="quem-somos">
-          <h2>
+        <section className="text-center my-15 mb-7.5">
+          <h2 className="text-[#607a1e] font-extrabold text-[24px] md:text-[36px]">
             <strong>Quem somos</strong>
           </h2>
         </section>
