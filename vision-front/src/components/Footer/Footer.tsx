@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <footer className="bg-[#BABF34] text-white px-[10%] py-[30px] flex flex-wrap items-center justify-between gap-[20px] text-center">
+    <footer className="bg-[#BABF34] text-white px-[10%] py-7.5 flex flex-wrap items-center justify-between gap-5 text-center">
       
       <div className="rodape-esquerda">
         <img
@@ -17,7 +17,7 @@ const Footer = () => {
             <img
               src="/img/logo-facebook.png"
               alt="Facebook"
-              className="w-[38px] mx-[10px] transition-transform duration-300 hover:scale-[1.15]"
+              className="w-9.5 mx-2.5 transition-transform duration-300 hover:scale-[1.15]"
             />
           </a>
 
@@ -25,7 +25,7 @@ const Footer = () => {
             <img
               src="/img/logo-instagram.png"
               alt="Instagram"
-              className="w-[38px] mx-[10px] transition-transform duration-300 hover:scale-[1.15]"
+              className="w-9.5 mx-2.5 transition-transform duration-300 hover:scale-[1.15]"
             />
           </a>
 
@@ -33,7 +33,7 @@ const Footer = () => {
             <img
               src="/img/logo_linkedin (2).png"
               alt="LinkedIn"
-              className="w-[38px] mx-[10px] transition-transform duration-300 hover:scale-[1.15]"
+              className="w-9.5 mx-2.5 transition-transform duration-300 hover:scale-[1.15]"
             />
           </a>
 
@@ -41,7 +41,7 @@ const Footer = () => {
             <img
               src="/img/logo-twitter.png"
               alt="Twitter"
-              className="w-[38px] mx-[10px] transition-transform duration-300 hover:scale-[1.15]"
+              className="w-9.5 mx-2.5 transition-transform duration-300 hover:scale-[1.15]"
             />
           </a>
 
@@ -51,7 +51,7 @@ const Footer = () => {
       <div className="rodape-direita">
         <a
           href="/paginaLogin"
-          className="bg-[#f78b1f] text-white px-[25px] py-[12px] rounded-[10px] font-bold cursor-pointer transition duration-300 hover:bg-[#ffd28a] hover:text-[#333]"
+          className="bg-[#f78b1f] text-white px-6.25 py-3 rounded-[10px] font-bold cursor-pointer transition duration-300 hover:bg-[#ffd28a] hover:text-[#333]"
         >
           Quero fazer parte
         </a>
