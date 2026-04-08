@@ -1,7 +1,6 @@
 const Footer = () => {
   return (
     <footer className="bg-[#BABF34] text-white px-[10%] py-7.5 flex flex-wrap items-center justify-between gap-5 text-center">
-      
       <div className="rodape-esquerda">
         <img
           src="/img/logo-turma-do-bem-branca.png"
@@ -12,7 +11,6 @@ const Footer = () => {
 
       <div className="container-rodape-meio">
         <div className="flex items-center justify-center">
-          
           <a href="https://www.facebook.com/turmadobem/?locale=pt_BR">
             <img
               src="/img/logo-facebook.png"
@@ -44,7 +42,6 @@ const Footer = () => {
               className="w-9.5 mx-2.5 transition-transform duration-300 hover:scale-[1.15]"
             />
           </a>
-
         </div>
       </div>
 
@@ -56,9 +53,7 @@ const Footer = () => {
           Quero fazer parte
         </a>
       </div>
-
     </footer>
   );
 };
-
 export default Footer;

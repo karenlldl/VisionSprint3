@@ -39,7 +39,6 @@ const Contato = () => {
 
         <section className="localizacao">
           <div className="localizacao-conteudo">
-            
             <div className="mapa">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.682438828481!2d-46.63731352477059!3d-23.578938478783777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c35d7aa63d%3A0x41c9e0e14db5b4f8!2sR.%20Maur%C3%ADcio%20Francisco%20Klabin%2C%20449%20-%20Vila%20Mariana%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2004120-020!5e0!3m2!1spt-BR!2sbr!4v1697733123456"
@@ -65,7 +64,6 @@ const Contato = () => {
                 <strong>Telefone:</strong> (11) 5084-7276
               </p>
             </div>
-
           </div>
         </section>
       </main>
