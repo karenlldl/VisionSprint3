@@ -103,7 +103,7 @@ const cards = [
             label={card.label}
         />
       ))}
-  </div>
+</div>
 
 
       </section>
@@ -117,7 +117,7 @@ const cards = [
           />
 
           <div className="bg-[#f78b1f] text-white px-10 py-8 rounded-2xl max-w-xl shadow-md">
-            <p className="text-base leading-relaxed mb-2">
+            <p className="text-lg leading-relaxed mb-2">
               Eu tinha muita vergonha de sorrir, me sentia toda feia e sonhava
               com um aparelho para corrigir os dentes. Conforme as cáries sumiam
               e os dentes se endireitavam, eu me tornava cada vez mais confiante.
