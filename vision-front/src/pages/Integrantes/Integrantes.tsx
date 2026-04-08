@@ -3,8 +3,8 @@ const Integrantes = () => {
     <>
       <section className="banner">
         <img
-          src="/IMAGEM/header-integrantes.png"
-          alt="Imagem com a logo da Vision - Integrantes"
+          src="/img/header-integrantes.png"
+          alt="img com a logo da Vision - Integrantes"
         />
       </section>
 
@@ -19,7 +19,7 @@ const Integrantes = () => {
           
           <div className="integrante">
             <img
-              src="/IMAGEM/imagem-integrante-denise.jpeg"
+              src="/img/img-integrante-denise.jpeg"
               alt="Foto de Denise Santos"
             />
             <h3>DENISE SANTOS</h3>
@@ -38,7 +38,7 @@ const Integrantes = () => {
 
           <div className="integrante">
             <img
-              src="/IMAGEM/imagem-integrante-henrique.jpeg"
+              src="/img/img-integrante-henrique.jpeg"
               alt="Foto de Henrique Bagueixe"
             />
             <h3>HENRIQUE BAGUEIXE</h3>
@@ -57,7 +57,7 @@ const Integrantes = () => {
 
           <div className="integrante">
             <img
-              src="/IMAGEM/imagem-integrante-karen.jpeg"
+              src="/img/img-integrante-karen.jpeg"
               alt="Foto de Karen Cardoso"
             />
             <h3>KAREN CARDOSO</h3>

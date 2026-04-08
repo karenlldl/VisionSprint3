@@ -5,7 +5,7 @@ const PaginaCadastro = () => {
       <div className="imgVision">
         <aside className="aside">
           <img
-            src="/imagem/logo_vision.png"
+            src="/img/logo_vision.png"
             alt="Vision Technology"
             className="logo"
           />

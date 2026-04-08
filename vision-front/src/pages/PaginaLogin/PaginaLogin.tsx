@@ -7,7 +7,7 @@ const PaginaLogin = () => {
       <div className="login-card">
         <div className="login-verde">
           <img
-            src="/imagem/logo_vision.png"
+            src="/img/logo_vision.png"
             alt="Logo Vision"
             className="logo-img"
           />
