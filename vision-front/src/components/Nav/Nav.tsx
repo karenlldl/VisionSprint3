@@ -1,40 +1,45 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 
 const Nav = () => {
-  return (
-    <>
-    <header className="bg-[#FCFF9F] flex items-center justify-between px-10 py-4.5 flex-wrap">
-      
-    <div>
-        <Link to="/">
-            <img
-                src="/img/LOGOTDB.png"
-                alt="Logo ONG Turma do Bem"
-                className="h-12.5"
-        />
-        </Link>
-    </div>
+  const [open, setOpen] = useState(false);
 
-      <button className="hidden bg-transparent border-none text-[28px] cursor-pointer text-[#4e7c11]">
-        ☰
+  return (
+    <header className="bg-[#FCFF9F] flex items-center justify-between px-10 py-4.5 flex-wrap relative">
+      <div>
+        <Link to="/">
+          <img
+            src="/img/LOGOTDB.png"
+            alt="Logo ONG Turma do Bem"
+            className="h-12.5"
+          />
+        </Link>
+      </div>
+
+      <button
+        onClick={() => setOpen(!open)}
+        className="block md:hidden bg-transparent border-none text-[28px] cursor-pointer text-[#4e7c11]"
+      >
+        {open ? "✕" : "☰"}
       </button>
 
-      <nav>
-        <ul className="flex gap-6.25 list-none">
-
-        <li>
+      <nav className={`${open ? "block" : "hidden"} w-full md:w-auto md:block`}>
+        <ul className="flex flex-col items-center gap-4 mt-4 list-none md:flex-row md:gap-6.25 md:mt-0">
+          <li>
             <Link
-                to="/sobre"
-                className="no-underline text-[#4e7c11] font-semibold transition duration-300 hover:text-[#d6e76b]"
+              to="/sobre"
+              className="no-underline text-[#4e7c11] font-semibold transition duration-300 hover:text-[#d6e76b]"
+              onClick={() => setOpen(false)}
             >
-            Sobre
+              Sobre
             </Link>
-        </li>
+          </li>
 
           <li>
             <Link
               to="/faq"
               className="no-underline text-[#4e7c11] font-semibold transition duration-300 hover:text-[#d6e76b]"
+              onClick={() => setOpen(false)}
             >
               FAQ
             </Link>
@@ -42,26 +47,27 @@ const Nav = () => {
 
           <li>
             <Link
-            to="/contato"
+              to="/contato"
               className="no-underline text-[#4e7c11] font-semibold transition duration-300 hover:text-[#d6e76b]"
+              onClick={() => setOpen(false)}
             >
               Contato
             </Link>
           </li>
 
           <li>
-            <Link              
-            to="/integrantes"
+            <Link
+              to="/integrantes"
               className="no-underline text-[#4e7c11] font-semibold transition duration-300 hover:text-[#d6e76b]"
+              onClick={() => setOpen(false)}
             >
               Integrantes
             </Link>
           </li>
-
         </ul>
       </nav>
 
-      <div className="flex items-center gap-2.5">
+      <div className="w-full flex justify-center mt-2.5 md:w-auto md:mt-0 md:flex md:items-center md:gap-2.5">
         <img
           src="/img/icone login.png"
           alt="Ícone de login"
@@ -69,15 +75,14 @@ const Nav = () => {
         />
 
         <Link
-            to="/login"
+          to="/login"
           className="text-[#727e24] no-underline font-bold"
+          onClick={() => setOpen(false)}
         >
           Entre ou <br /> Cadastre-se
         </Link>
       </div>
-
     </header>
-    </>
   );
 };
 
