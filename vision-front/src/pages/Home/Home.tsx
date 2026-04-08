@@ -1,6 +1,30 @@
 import { Link } from "react-router-dom";
+import NumerosCard from "../../components/NumerosCards/NumerosCards";
 
 const Home = () => {
+    
+const cards = [
+  {
+    image: "/img/ICONE_AMARELO_JOVENS.png",
+    alt: "Jovens atendidos",
+    value: "+82 mil",
+    label: "Jovens atendidos",
+  },
+  {
+    image: "/img/ICONE_LARANJA_MULHER.png",
+    alt: "Mulheres atendidas",
+    value: "+1,1 mil",
+    label: "Mulheres atendidas",
+  },
+  {
+    image: "/img/ICONE_AMARELO_DENTISTA_VOLUNTARIO.png",
+    alt: "Dentistas voluntários",
+    value: "+18 mil",
+    label: "Dentistas voluntários",
+  },
+];
+
+
   return (
     <>
       <section className="relative w-full h-[clamp(260px,60vh,420px)] xl:h-120 flex items-center justify-start overflow-hidden">
@@ -70,48 +94,18 @@ const Home = () => {
         </h2>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 items-start justify-items-center">
-          <div className="text-center">
-            <img
-              src="/img/ICONE_AMARELO_JOVENS.png"
-              alt="Jovens atendidos"
-              className="w-24 object-contain mb-3 transition-transform duration-300 hover:scale-110"
-            />
-            <p className="text-[#4e7c11] font-extrabold text-xl my-2">
-              <strong>+82 mil</strong>
-            </p>
-            <p className="text-gray-600 text-sm">
-              Jovens atendidos
-            </p>
-          </div>
+        {cards.map((card) => (
+          <NumerosCard
+            key={card.label}
+            image={card.image}
+            alt={card.alt}
+            value={card.value}
+            label={card.label}
+        />
+      ))}
+  </div>
 
-          <div className="text-center">
-            <img
-              src="/img/ICONE_LARANJA_MULHER.png"
-              alt="Mulheres atendidas"
-              className="w-24 object-contain mb-3 transition-transform duration-300 hover:scale-110"
-            />
-            <p className="text-[#4e7c11] font-extrabold text-xl my-2">
-              <strong>+1,1 mil</strong>
-            </p>
-            <p className="text-gray-600 text-sm">
-              Mulheres atendidas
-            </p>
-          </div>
 
-          <div className="text-center">
-            <img
-              src="/img/ICONE_AMARELO_DENTISTA_VOLUNTARIO.png"
-              alt="Dentistas voluntários"
-              className="w-24 object-contain mb-3 transition-transform duration-300 hover:scale-110"
-            />
-            <p className="text-[#4e7c11] font-extrabold text-xl my-2">
-              <strong>+18 mil</strong>
-            </p>
-            <p className="text-gray-600 text-sm">
-              Dentistas voluntários
-            </p>
-          </div>
-        </div>
       </section>
 
       <section className="bg-[#fff4e8] px-[10%] py-16">
