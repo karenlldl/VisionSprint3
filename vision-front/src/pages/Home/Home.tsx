@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import NumerosCard from "../../components/NumerosCards/NumerosCards";
+import NumerosCard from "../../Components/NumerosCards/NumerosCards";
 
 const Home = () => {
     

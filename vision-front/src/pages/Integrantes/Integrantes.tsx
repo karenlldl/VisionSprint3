@@ -21,7 +21,7 @@ const Integrantes = () => {
             <img
               src="/img/imagem-integrante-denise.jpeg"
               alt="Foto de Denise Santos"
-              className="w-45 h-45 rounded-full border-[5px] border-[#b5cf36] object-cover mb-[15px] mx-auto"
+              className="w-45 h-45 rounded-full border-[5px] border-[#b5cf36] object-cover mb-3.75 mx-auto"
             />
             <h3 className="text-[#607a1e] text-[18px] font-bold uppercase">
               DENISE SANTOS
@@ -57,7 +57,7 @@ const Integrantes = () => {
             <img
               src="/img/imagem-integrante-henrique.jpeg"
               alt="Foto de Henrique Bagueixe"
-              className="w-45 h-45 rounded-full border-[5px] border-[#b5cf36] object-cover mb-[15px] mx-auto"
+              className="w-45 h-45 rounded-full border-[5px] border-[#b5cf36] object-cover mb-3.75 mx-auto"
             />
             <h3 className="text-[#607a1e] text-[18px] font-bold uppercase">
               HENRIQUE BAGUEIXE
@@ -93,7 +93,7 @@ const Integrantes = () => {
             <img
               src="/img/imagem-integrante-karen.jpeg"
               alt="Foto de Karen Cardoso"
-              className="w-45 h-45 rounded-full border-[5px] border-[#b5cf36] object-cover mb-[15px] mx-auto"
+              className="w-45 h-45 rounded-full border-[5px] border-[#b5cf36] object-cover mb-3.75 mx-auto"
             />
             <h3 className="text-[#607a1e] text-[18px] font-bold uppercase">
               KAREN CARDOSO
