@@ -26,14 +26,15 @@ const Sobre = () => {
             <strong>transparência</strong> em cada etapa do processo.
           </p>
           <p className="mt-4">
-            Desenvolvido com <strong>Python</strong>, <strong>HTML</strong>,{" "}
-            <strong>CSS</strong> e <strong>APIs do Google Maps</strong>, o
-            projeto segue um <strong>roadmap</strong> que abrange planejamento,
-            desenvolvimento, integração, testes e implementação — sempre com
-            foco em <strong>acessibilidade</strong>, <strong>inclusão</strong> e{" "}
+            Desenvolvido com <strong>JAVA</strong>,{" "}
+            <strong>REACT/VITE E TYPESCRIPT</strong>, <strong>TAILWIND/CSS</strong> e{" "}
+            <strong>APIs do Google Maps</strong>, o projeto segue um{" "}
+            <strong>roadmap</strong> que abrange planejamento, desenvolvimento,
+            integração, testes e implementação — sempre com foco em{" "}
+            <strong>acessibilidade</strong>, <strong>inclusão</strong> e{" "}
             <strong>eficiência</strong>.
           </p>
-          <p className="mt-4 font-bold text-yellow-200">
+          <p className="mt-4 font-bold text-white">
             Acreditamos que a tecnologia deve ser usada para{" "}
             <strong>aproximar pessoas e multiplicar o bem</strong>.
           </p>
