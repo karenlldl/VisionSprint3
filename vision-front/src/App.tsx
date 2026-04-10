@@ -7,23 +7,28 @@ import Integrantes from "./pages/Integrantes/Integrantes";
 import PaginaLogin from "./pages/PaginaLogin/PaginaLogin";
 import PaginaCadastro from "./pages/PaginaCadastro/PaginaCadastro";
 import Layout from "./Components/Layout/Layout";
-import PaginaDentista from "./pages/PaginaDentista/PaginaDentista";
+import PaginaBeneficiario from "./pages/PaginaBeneficiario/PaginaBeneficiario";
+
 
 const App = () => {
   return (
     <BrowserRouter>
       <Routes>
+        {/* Rotas públicas com layout do site */}
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="sobre" element={<Sobre />} />
           <Route path="faq" element={<Faq />} />
           <Route path="contato" element={<Contato />} />
           <Route path="integrantes" element={<Integrantes />} />
-          <Route path="login" element={<PaginaLogin />} />
-          <Route path="cadastro" element={<PaginaCadastro />} />
-          <Route path="dentista" element={<PaginaDentista />} />
+          <Route path="/login" element={<PaginaLogin />} />
+          <Route path="/cadastro" element={<PaginaCadastro />} />
         </Route>
 
+
+
+        {/* Áreas dos perfis */}
+        <Route path="/beneficiario" element={<PaginaBeneficiario />} />
       </Routes>
     </BrowserRouter>
   );
