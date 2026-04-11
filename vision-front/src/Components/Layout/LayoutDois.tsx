@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> bf2cf2187c0625cced01a4438b3a3efd3afbe069
 import { useState, type ReactNode } from "react";
 import Menu from "../Menu/Menu";
 import NavDois from "../NavDois/NavDois";
@@ -7,7 +11,11 @@ type MenuItem = {
   path: string;
 };
 
+<<<<<<< HEAD
 type LayoutDoisProps = {
+=======
+type AppLayoutProps = {
+>>>>>>> bf2cf2187c0625cced01a4438b3a3efd3afbe069
   nome: string;
   mostrarDr?: boolean;
   menuItems: MenuItem[];
@@ -19,7 +27,11 @@ const LayoutDois = ({
   mostrarDr = false,
   menuItems,
   children,
+<<<<<<< HEAD
 }: LayoutDoisProps) => {
+=======
+}: AppLayoutProps) => {
+>>>>>>> bf2cf2187c0625cced01a4438b3a3efd3afbe069
   const [menuAberto, setMenuAberto] = useState(false);
 
   return (
@@ -33,7 +45,11 @@ const LayoutDois = ({
       <div className="flex">
         <Menu menuItems={menuItems} menuAberto={menuAberto} />
 
+<<<<<<< HEAD
         <main className="w-full p-5">
+=======
+        <main className="w-full p-5 md:ml-60 md:p-7.5">
+>>>>>>> bf2cf2187c0625cced01a4438b3a3efd3afbe069
           {children}
         </main>
       </div>
