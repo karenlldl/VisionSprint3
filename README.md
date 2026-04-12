@@ -51,25 +51,25 @@ A plataforma centraliza essas informações e transforma o processo em um fluxo 
 O projeto foi desenvolvido utilizando **React + TypeScript + Tailwind CSS**, com organização baseada em componentes reutilizáveis.
 
 ### 📁 Estrutura:
-src/
-├── Components/
-│ ├── Layout/
-│ ├── Nav/
-│ ├── Footer/
-│ ├── NumerosCards/
-│ └── ...
-│
-├── pages/
-│ ├── Home/
-│ ├── Sobre/
-│ ├── Contato/
-│ ├── PaginaCadastro/
-│ ├── PaginaDentista/
-│ ├── PaginaGestor/
-│ └── ...
-│
-├── App.tsx
-└── main.tsx
+src/<br>
+├── Components/<br>
+│ ├── Layout/<br>
+│ ├── Nav<br>
+│ ├── Footer/<br>
+│ ├── NumerosCards/<br>
+│ └── ...<br>
+│<br>
+├── pages/<br>
+│ ├── Home/<br>
+│ ├── Sobre/<br>
+│ ├── Contato<br>
+│ ├── PaginaCadastro/<br>
+│ ├── PaginaDentista/<br>
+│ ├── PaginaGestor/<br>
+│ └── ...<br>
+│<br>
+├── App.tsx<br>
+└── main.tsx<br>
 
 
 ---
