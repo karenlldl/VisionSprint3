@@ -12,17 +12,17 @@ const faqItems = [
       "Basta acessar a aba “Entre ou Cadastre-se” no menu e preencher o formulário inicial. O sistema indicará automaticamente a escola ou dentista parceiro mais próximo de você.",
   },
   {
-    pergunta: "Sou dentista, como posso me tornar voluntário da Turma do Bem?",
+    pergunta: "Sou um dentista, como posso me tornar voluntário da Turma do Bem?",
     resposta:
       "No mesmo botão de cadastro, selecione “Sou dentista voluntário” e complete o formulário. Nossa equipe fará a validação e enviará os próximos passos por e-mail.",
   },
   {
-    pergunta: "Como o sistema define quem tem prioridade no atendimento?",
+    pergunta: "Como o nosso sistema define quem tem prioridade no atendimento?",
     resposta:
       "O sistema utiliza um algoritmo de pontuação social (score), que considera critérios como idade, renda, condição dentária e proximidade geográfica — sempre com o objetivo de garantir justiça e transparência.",
   },
   {
-    pergunta: "O chatbot da plataforma substitui o atendimento humano?",
+    pergunta: "O chatbot da plataforma substitui completamente o atendimento humano?",
     resposta:
       "Não. Ele foi criado para auxiliar pessoas analfabetas e/ou com dificuldades com dispositivos eletrônicos, além de agilizar a triagem e tirar dúvidas iniciais, mas todo atendimento e acompanhamento são realizados por pessoas reais e voluntários da ONG.",
   },
