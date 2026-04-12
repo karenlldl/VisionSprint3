@@ -16,6 +16,7 @@ import Layout from "./Components/Layout/Layout";
 import PaginaBeneficiario from "./pages/PaginaBeneficiario/PaginaBeneficiario";
 import PaginaDentista from "./pages/PaginaDentista/PaginaDentista";
 import PaginaGestor from "./pages/PaginaGestor/PaginaGestor";
+import NotFound from "./pages/NotFound/NotFound";
 
 const App = () => {
   return (
@@ -30,6 +31,7 @@ const App = () => {
           <Route path="integrantes" element={<Integrantes />} />
           <Route path="login" element={<PaginaLogin />} />
           <Route path="cadastro" element={<PaginaCadastro />} />
+          <Route path="*" element={<NotFound />} />
         </Route>
 
         {/* páginas internas */}

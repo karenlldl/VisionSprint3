@@ -53,7 +53,7 @@ const PaginaDentista = () => {
       id: 2,
       nome: "Larissa Souza",
       telefone: "(11) 97777-4444",
-      foto: "/img/paciente2.png",
+      foto: "/img/paciente1.jpg",
       status: "Finalizado",
       historico: [
         { id: 1, procedimento: "Avaliação", data: "05/10/2025" },
@@ -66,7 +66,7 @@ const PaginaDentista = () => {
       id: 3,
       nome: "José Henrique",
       telefone: "(11) 96666-2222",
-      foto: "/img/paciente3.png",
+      foto: "/img/paciente2.jpg",
       status: "Em tratamento",
       historico: [
         { id: 1, procedimento: "Canal", data: "12/10/2025" },

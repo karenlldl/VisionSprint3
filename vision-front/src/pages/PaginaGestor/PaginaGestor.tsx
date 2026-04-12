@@ -33,25 +33,25 @@ const PaginaGestor = () => {
             </h2>
 
             <div className="flex flex-wrap gap-6">
-              <div className="w-[220px] rounded bg-white p-5 text-center shadow">
+              <div className="w-55 rounded bg-white p-5 text-center shadow">
                 <p className="text-3xl">🔎</p>
                 <h3 className="mt-2 text-2xl font-bold">320</h3>
                 <p>Buscas no site</p>
               </div>
 
-              <div className="w-[220px] rounded bg-white p-5 text-center shadow">
+              <div className="w-55 rounded bg-white p-5 text-center shadow">
                 <p className="text-3xl">🦷</p>
                 <h3 className="mt-2 text-2xl font-bold">185</h3>
                 <p>Pacientes cadastrados</p>
               </div>
 
-              <div className="w-[220px] rounded bg-white p-5 text-center shadow">
+              <div className="w-55 rounded bg-white p-5 text-center shadow">
                 <p className="text-3xl">👨‍⚕️</p>
                 <h3 className="mt-2 text-2xl font-bold">32</h3>
                 <p>Dentistas ativos</p>
               </div>
 
-              <div className="w-[220px] rounded bg-white p-5 text-center shadow">
+              <div className="w-55 rounded bg-white p-5 text-center shadow">
                 <p className="text-3xl">💰</p>
                 <h3 className="mt-2 text-2xl font-bold">R$ 12.500</h3>
                 <p>Total de doações</p>
@@ -127,25 +127,25 @@ const PaginaGestor = () => {
 
             {/* cards principais */}
             <div className="mb-8 flex flex-wrap gap-6">
-              <div className="w-[220px] rounded bg-white p-5 text-center shadow">
+              <div className="w-55 rounded bg-white p-5 text-center shadow">
                 <p className="text-3xl">🔎</p>
                 <h3 className="mt-2 text-2xl font-bold">320</h3>
                 <p>Buscas no site</p>
               </div>
 
-              <div className="w-[220px] rounded bg-white p-5 text-center shadow">
+              <div className="w-55 rounded bg-white p-5 text-center shadow">
                 <p className="text-3xl">👨‍⚕️</p>
                 <h3 className="mt-2 text-2xl font-bold">32</h3>
                 <p>Dentistas ativos</p>
               </div>
 
-              <div className="w-[220px] rounded bg-white p-5 text-center shadow">
+              <div className="w-55 rounded bg-white p-5 text-center shadow">
                 <p className="text-3xl">💰</p>
                 <h3 className="mt-2 text-2xl font-bold">58</h3>
                 <p>Doadores cadastrados</p>
               </div>
 
-              <div className="w-[220px] rounded bg-white p-5 text-center shadow">
+              <div className="w-55 rounded bg-white p-5 text-center shadow">
                 <p className="text-3xl">🦷</p>
                 <h3 className="mt-2 text-2xl font-bold">120</h3>
                 <p>Pacientes em tratamento</p>
