@@ -24,7 +24,7 @@ const Integrantes = () => {
               className="w-45 h-45 rounded-full border-[5px] border-[#b5cf36] object-cover mb-3.75 mx-auto"
             />
             <h3 className="text-[#607a1e] text-[18px] font-bold uppercase">
-              DENISE SANTOS
+              DENISE SANTOS DA SILVA
             </h3>
             <p>
               <strong>RM:</strong> 567559
@@ -60,7 +60,7 @@ const Integrantes = () => {
               className="w-45 h-45 rounded-full border-[5px] border-[#b5cf36] object-cover mb-3.75 mx-auto"
             />
             <h3 className="text-[#607a1e] text-[18px] font-bold uppercase">
-              HENRIQUE BAGUEIXE
+              HENRIQUE PEREIRA BAGUEIXE
             </h3>
             <p>
               <strong>RM:</strong> 568292
@@ -96,7 +96,7 @@ const Integrantes = () => {
               className="w-45 h-45 rounded-full border-[5px] border-[#b5cf36] object-cover mb-3.75 mx-auto"
             />
             <h3 className="text-[#607a1e] text-[18px] font-bold uppercase">
-              KAREN CARDOSO
+              KAREN CARDOSO LIRA
             </h3>
             <p>
               <strong>RM:</strong> 566870
