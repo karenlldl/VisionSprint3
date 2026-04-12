@@ -11,32 +11,23 @@ import PaginaCadastro from "./pages/PaginaCadastro/PaginaCadastro";
 
 // layout do site
 import Layout from "./Components/Layout/Layout";
-<<<<<<< HEAD
 
 // páginas internas
 import PaginaBeneficiario from "./pages/PaginaBeneficiario/PaginaBeneficiario";
 import PaginaDentista from "./pages/PaginaDentista/PaginaDentista";
-=======
-import PaginaBeneficiario from "./pages/PaginaBeneficiario/PaginaBeneficiario";
-
->>>>>>> bf2cf2187c0625cced01a4438b3a3efd3afbe069
+import PaginaGestor from "./pages/PaginaGestor/PaginaGestor";
 
 const App = () => {
   return (
     <BrowserRouter>
       <Routes>
-<<<<<<< HEAD
-        {/* páginas normais do site */}
-=======
-        {/* Rotas públicas com layout do site */}
->>>>>>> bf2cf2187c0625cced01a4438b3a3efd3afbe069
+        {/* páginas públicas */}
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="sobre" element={<Sobre />} />
           <Route path="faq" element={<Faq />} />
           <Route path="contato" element={<Contato />} />
           <Route path="integrantes" element={<Integrantes />} />
-<<<<<<< HEAD
           <Route path="login" element={<PaginaLogin />} />
           <Route path="cadastro" element={<PaginaCadastro />} />
         </Route>
@@ -44,20 +35,13 @@ const App = () => {
         {/* páginas internas */}
         <Route path="/beneficiario" element={<PaginaBeneficiario />} />
 
-        {/* dentista */}
-        {/* usamos a mesma página para /dentista e /dentista/paciente */}
         <Route path="/dentista" element={<PaginaDentista />} />
         <Route path="/dentista/paciente" element={<PaginaDentista />} />
-=======
-          <Route path="/login" element={<PaginaLogin />} />
-          <Route path="/cadastro" element={<PaginaCadastro />} />
-        </Route>
 
-
-
-        {/* Áreas dos perfis */}
-        <Route path="/beneficiario" element={<PaginaBeneficiario />} />
->>>>>>> bf2cf2187c0625cced01a4438b3a3efd3afbe069
+        <Route path="/gestor" element={<PaginaGestor />} />
+        <Route path="/gestor/pacientes" element={<PaginaGestor />} />
+        <Route path="/gestor/dentistas" element={<PaginaGestor />} />
+        <Route path="/gestor/gestao" element={<PaginaGestor />} />
       </Routes>
     </BrowserRouter>
   );

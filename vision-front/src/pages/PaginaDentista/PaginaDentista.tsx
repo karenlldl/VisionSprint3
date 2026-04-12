@@ -2,14 +2,12 @@ import { useState } from "react";
 import { useLocation } from "react-router-dom";
 import LayoutDois from "../../Components/Layout/LayoutDois";
 
-// tipo do histórico
 type Historico = {
   id: number;
   procedimento: string;
   data: string;
 };
 
-// tipo da agenda
 type Agenda = {
   id: number;
   procedimento: string;
@@ -17,7 +15,6 @@ type Agenda = {
   hora: string;
 };
 
-// tipo do paciente
 type Paciente = {
   id: number;
   nome: string;
@@ -29,21 +26,14 @@ type Paciente = {
 };
 
 const PaginaDentista = () => {
-  // pega a rota atual
   const location = useLocation();
 
-  // se a rota tiver "paciente", abre a tela paciente
-  // se não tiver, abre a tela início
   const aba = location.pathname.includes("paciente") ? "paciente" : "inicio";
 
-  // guarda o texto da busca
   const [buscaInput, setBuscaInput] = useState("");
-
-  // guarda o paciente escolhido
   const [pacienteSelecionado, setPacienteSelecionado] =
     useState<Paciente | null>(null);
 
-  // lista de pacientes
   const pacientes: Paciente[] = [
     {
       id: 1,
@@ -87,7 +77,6 @@ const PaginaDentista = () => {
     },
   ];
 
-  // tira acento para melhorar a busca
   function tirarAcento(texto: string) {
     return texto
       .normalize("NFD")
@@ -95,7 +84,6 @@ const PaginaDentista = () => {
       .toLowerCase();
   }
 
-  // filtra pacientes pelo nome digitado
   const pacientesFiltrados = pacientes.filter((paciente) =>
     tirarAcento(paciente.nome).includes(tirarAcento(buscaInput))
   );
@@ -110,7 +98,7 @@ const PaginaDentista = () => {
       ]}
     >
       <>
-        {/* TELA INÍCIO */}
+        {/* INÍCIO */}
         {aba === "inicio" && (
           <>
             <h2 className="mb-4 text-2xl font-bold text-[#607a1e]">
@@ -144,7 +132,7 @@ const PaginaDentista = () => {
           </>
         )}
 
-        {/* TELA PACIENTE */}
+        {/* PACIENTE */}
         {aba === "paciente" && (
           <>
             <h2 className="mb-2 text-2xl font-bold">
@@ -155,7 +143,6 @@ const PaginaDentista = () => {
               Digite o nome do paciente para procurar.
             </p>
 
-            {/* campo da busca */}
             <div className="relative max-w-100">
               <input
                 type="text"
@@ -168,7 +155,6 @@ const PaginaDentista = () => {
                 className="w-full rounded border p-2"
               />
 
-              {/* sugestões */}
               {buscaInput !== "" && (
                 <div className="absolute left-0 right-0 top-full z-10 mt-1 border bg-white shadow">
                   {pacientesFiltrados.length > 0 ? (
@@ -193,7 +179,6 @@ const PaginaDentista = () => {
               )}
             </div>
 
-            {/* cards */}
             {!buscaInput && !pacienteSelecionado && (
               <>
                 <h3 className="mt-6 mb-4 text-xl font-bold">
@@ -240,7 +225,6 @@ const PaginaDentista = () => {
               </>
             )}
 
-            {/* detalhes do paciente */}
             {pacienteSelecionado && (
               <div className="mt-6">
                 <button
