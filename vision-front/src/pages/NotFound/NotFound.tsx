@@ -16,8 +16,8 @@ const NotFound = () => {
             </h2>
 
             <p className="mb-6 text-[15px] leading-6 text-[#4b4b4b]">
-              Você pode ter digitado o endereço incorretamente ou a página pode
-              ter sido movida.
+              Você pode ter digitado a URL incorretamente ou a página pode
+              ter sido movida. Tente novamente.
             </p>
 
             <Link

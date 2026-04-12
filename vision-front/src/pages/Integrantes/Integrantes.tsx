@@ -96,7 +96,7 @@ const Integrantes = () => {
               className="w-45 h-45 rounded-full border-[5px] border-[#b5cf36] object-cover mb-3.75 mx-auto"
             />
             <h3 className="text-[#607a1e] text-[18px] font-bold uppercase">
-              KAREN CARDOSO LIRA
+              KAREN LIRA CARDOSO
             </h3>
             <p>
               <strong>RM:</strong> 566870
