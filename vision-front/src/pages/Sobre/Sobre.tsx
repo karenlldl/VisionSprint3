@@ -36,7 +36,7 @@ const Sobre = () => {
           </p>
           <p className="mt-4 font-bold text-white">
             Acreditamos que a tecnologia deve ser usada para{" "}
-            <strong>aproximar pessoas e multiplicar o bem</strong>.
+            <strong></strong>.
           </p>
         </div>
         <div className="flex-1 min-w-250px flex justify-center">
