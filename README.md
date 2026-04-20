@@ -115,7 +115,7 @@ npm run dev
 https://github.com/karenlldl/VisionSprint3
 
 ## 🎥 Vídeo no YouTube:
-https://youtu.be/eCoCN9hxK5Q
+https://youtu.be/Hwuv0K8vAvA
 
 ## 🌍 Considerações Finais
 
